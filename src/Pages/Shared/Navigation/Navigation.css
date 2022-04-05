@@ -1,0 +1,14 @@
+
+.main-nav{
+    background: #000000;
+    color: #fff;
+}
+
+.logo{
+    width: 220px;
+    height: auto;
+}
+
+.sign_up , .sign_in{
+    border-left: 1px solid #fff;
+}
