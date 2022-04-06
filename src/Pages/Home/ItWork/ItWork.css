@@ -1,0 +1,14 @@
+.cata-main{
+    padding: 200px 0;
+}
+.cata-full-inner{
+    background: rgb(230, 221, 221);
+    padding: 50px 50px 80px 50px;
+}
+.cata-title h2{
+    font-size: 50px;
+}
+.cata-item{
+    text-align: center;
+
+}
