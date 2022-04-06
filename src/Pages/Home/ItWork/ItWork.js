@@ -1,31 +1,29 @@
 import React from 'react';
-
-import bg from '../../../images/category-bg.jpg'
 import work1 from '../../../images/1.jpg'
 import work2 from '../../../images/2.jpg'
 import work3 from '../../../images/3.jpg'
 import work4 from '../../../images/4.jpg'
+import './ItWork.css'
 
 
 const ItWork = () => {
   return (
-    <div style={{ 
-      backgroundImage: `url(${bg})`,
-      backgroundRepeat: 'no-repeat', 
-    }}>
-      <div className='cata-main'>
+    <div className='work-main py-5'>
       <div className="container">
-        <div className="cata-full-inner">
-        <div className="cata-title text-center">
-          <h2>Browse Food Category</h2>
-          <p>Completely network impactful users whereas next-generation applications engage <br /> out thinking via tactical action.</p>
+        <div className="work-full-inner">
+        <div className="work-title text-center">
+          <h2>How it Works</h2>
+          <p className='mb-5'>Completely network impactful users whereas next-generation applications engage <br /> out thinking via tactical action.</p>
         </div>
 
         <div className="row">
 
-          <div className="col-lg-2">
-            <div className="work-item">
-              <div className="work-item bg-success">
+          <div className="col-lg-3">
+            <div className="work-item text-center">
+              <div className="work-step">
+                    <h5>1st step</h5>
+              </div>
+              <div className="work-img ">
                 <a href=""><img src={work1} alt="" /></a>
               </div>
               <div className='work-name'>
@@ -34,9 +32,12 @@ const ItWork = () => {
             </div>
           </div>
 
-          <div className="col-lg-2">
-            <div className="work-item">
-              <div className="work-img bg-info">
+          <div className="col-lg-3">
+            <div className="work-item text-center">
+            <div className="work-step">
+                    <h5>2nd step</h5>
+              </div>
+              <div className="work-img ">
                 <a href=""><img src={work2} alt="" /></a>
               </div>
               <div className='work-name'>
@@ -45,9 +46,12 @@ const ItWork = () => {
             </div>
           </div>
 
-          <div className="col-lg-2">
-            <div className="work-item">
-              <div className="work-img bg-primary">
+          <div className="col-lg-3">
+            <div className="work-item text-center">
+            <div className="work-step">
+                    <h5>3rd step</h5>
+              </div>
+              <div className="work-img ">
                 <a href=""><img src={work3} alt="" /></a>
               </div>
               <div className='work-name'>
@@ -56,9 +60,12 @@ const ItWork = () => {
             </div>
           </div>
 
-          <div className="col-lg-2">
-            <div className="work-item">
-              <div className="work-img bg-secondary">
+          <div className="col-lg-3">
+            <div className="work-item text-center">
+            <div className="work-step">
+                    <h5>final step</h5>
+              </div>
+              <div className="work-img ">
                 <a href=""><img src={work4} alt="" /></a>
               </div>
               <div className='work-name'>
@@ -73,7 +80,6 @@ const ItWork = () => {
         </div>
       </div>
       
-    </div>
     </div>
     
   );
