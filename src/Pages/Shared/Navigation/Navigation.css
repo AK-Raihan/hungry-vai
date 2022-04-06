@@ -13,3 +13,12 @@
     border-left: 1px solid #fff;
     
 }
+
+.logo{
+    width: 300px;
+}
+
+.user-pic{
+    width: 60px;
+    margin: 0 10px;
+}
