@@ -27,14 +27,14 @@ const Navigation = () => {
           <NavLink to="/products" className="nav-link fs-6 text-white">Products</NavLink>
         </li>
         <li className="nav-item">
-          <NavLink to="/shop" className="nav-link fs-6 text-white">Shop</NavLink>
+          <NavLink to="/home" className="nav-link fs-6 text-white">Shop</NavLink>
         </li>
       
         <li className="nav-item">
-          <NavLink to="/blog" className="nav-link fs-6 text-white">Blog</NavLink>
+          <NavLink to="/home" className="nav-link fs-6 text-white">Blog</NavLink>
         </li>
         <li className="nav-item">
-          <NavLink to="/contact" className="nav-link fs-6 text-white">Contact</NavLink>
+          <NavLink to="/home" className="nav-link fs-6 text-white">Contact</NavLink>
         </li>
       </ul>
       <div>

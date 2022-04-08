@@ -15,6 +15,7 @@ import ManageAllOrder from './Pages/Dashboard/ManageAllOrder/ManageAllOrder';
 import AuthProvider from './Context/AuthProvider';
 import AddService from './Pages/Dashboard/AddService/AddService';
 import Register from './Pages/Login/Register/Register';
+import About from './Pages/Home/About/About';
 
 
 function App() {
@@ -28,6 +29,8 @@ function App() {
           <Route path="/" element={<Home />}>
           </Route>
           <Route path="/home" element={<Home />}>
+          </Route>
+          <Route path="/about" element={<About />}>
           </Route>
           <Route path="/products" element={<Products />}>
           </Route>
