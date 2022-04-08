@@ -14,6 +14,7 @@ import MyOrder from './Pages/Dashboard/MyOrder/MyOrder';
 import ManageAllOrder from './Pages/Dashboard/ManageAllOrder/ManageAllOrder';
 import AuthProvider from './Context/AuthProvider';
 import AddService from './Pages/Dashboard/AddService/AddService';
+import Register from './Pages/Login/Register/Register';
 
 
 function App() {
@@ -31,6 +32,8 @@ function App() {
           <Route path="/products" element={<Products />}>
           </Route>
           <Route path="/login" element={<Login />}>
+          </Route>
+          <Route path="/register" element={<Register />}>
           </Route>
           <Route path="/booking/:productId" element={<Booking />}>
           </Route>

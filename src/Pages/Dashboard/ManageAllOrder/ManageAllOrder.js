@@ -1,23 +1,20 @@
 
 import React, { useState, useEffect } from 'react';
-import useFirebase from '../../../hooks/useFirebase';
+
 
 
 
 const ManageAllOrder = () => {
     const[orders, setOrders]=useState([])
-    const { user } = useFirebase();
 
-    const email = user.email;
-    console.log(email);
+
+ 
 
     useEffect(()=>{
         fetch(`http://localhost:5000/myOrder`)
         .then(res=>res.json())
         .then(data=>setOrders(data));
     },[]);
-
-    console.log(orders);
 
     const handleDelete = (id) => {
         fetch(`http://localhost:5000/delteOrder/${id}`, {

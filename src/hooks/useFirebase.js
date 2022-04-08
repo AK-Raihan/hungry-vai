@@ -18,7 +18,7 @@ initializeFirebase()
 const useFirebase= ()=>{
     const [user, setUser]= useState({});
     const [authError, setAuthError] = useState('');
-    const[isloading, setIsLoading]= useState(true);
+    const[isLoading, setIsLoading]= useState(true);
 
 
 
@@ -102,7 +102,7 @@ const useFirebase= ()=>{
 
       return{
           user,
-          isloading,
+          isLoading,
           authError,
           registerUser,
           loginUser,

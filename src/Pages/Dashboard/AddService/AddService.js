@@ -6,7 +6,7 @@ const AddService = () => {
     const { register, handleSubmit, reset} = useForm();
     const onSubmit = data =>{
         console.log(data)
-        fetch('http://localhost:5000/services',{
+        fetch('http://localhost:5000/addService',{
             method: 'POST',
             headers: {'Content-Type' : 'application/json'},
             body: JSON.stringify(data)
@@ -25,7 +25,7 @@ const AddService = () => {
         <h6>Please Add a Food</h6> 
             <form onSubmit={handleSubmit(onSubmit)}>
                 <input placeholder="Name" defaultValue="name" {...register("name")} />
-                <textarea placeholder="Name" defaultValue="description" {...register("description")} />
+                <textarea placeholder="Description" defaultValue="description" {...register("description")} />
                 <input placeholder="Price" type="number" {...register("price")} />
                 <input placeholder="image url"  {...register("img")} />
                 
