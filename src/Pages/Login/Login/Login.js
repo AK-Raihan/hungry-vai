@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import { NavLink, useLocation, useNavigate } from 'react-router-dom';
-import useFirebase from '../../../hooks/useFirebase';
+import useAuth from '../../../hooks/useAuth';
+
+
 
 
 
 const Login = () => {
-    const {user, signInUsingGoogle } = useFirebase();
+    const {user, signInUsingGoogle } = useAuth();
 
     const location = useLocation();
     const navigate = useNavigate();

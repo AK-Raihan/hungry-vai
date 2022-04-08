@@ -5,7 +5,9 @@ import {
     signOut,
     GoogleAuthProvider,
     signInWithPopup,
-    getAuth
+    getAuth,
+    signInWithEmailAndPassword,
+    createUserWithEmailAndPassword
    } from "firebase/auth";
 
 
@@ -22,6 +24,41 @@ const useFirebase= ()=>{
 
       const auth = getAuth();
       const googleProvider = new GoogleAuthProvider();
+
+    // register
+    const registerUser = (email, password, navigate)=>{
+        setIsLoading(true);
+        createUserWithEmailAndPassword(auth, email, password)
+            .then((userCredential) => {
+                setAuthError('');
+                const newUser = { email, password };
+                setUser(newUser);
+                navigate('/');
+                
+            })
+            .catch((error) => {
+                setAuthError(error.message);
+                console.log(error);
+            })
+            .finally(() => setIsLoading(false));
+    }
+
+    // login
+    const loginUser = (email, password, location, navigate) => {
+        setIsLoading(true);
+        signInWithEmailAndPassword(auth, email, password)
+            .then((userCredential) => {
+                const destination = location?.state?.from || '/';
+                navigate(destination);
+                setAuthError('');
+            })
+            .catch((error) => {
+                setAuthError(error.message);
+            })
+            .finally(() => setIsLoading(false));
+    }
+    
+      
 
     // google login
     const signInUsingGoogle = (location, navigate)=>{
@@ -66,8 +103,11 @@ const useFirebase= ()=>{
       return{
           user,
           isloading,
-          logout,
-          signInUsingGoogle
+          authError,
+          registerUser,
+          loginUser,
+          signInUsingGoogle,
+          logout
       }
 
 

@@ -1,8 +1,9 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 
 const Food = (props) => {
-    const{ name, img, description, price}=props.food;
+    const{_id, name, img, description, price}=props.food;
     return (
         <div class="col text-center">
     <div class="card h-100 food-card">
@@ -13,7 +14,9 @@ const Food = (props) => {
         <p className='price '>{price}</p>
       </div>
       <div className="card-body">
-          <button className='order-btn'>ORDER NOW</button>
+            <NavLink to={`/booking/${_id}`}>
+            <button className="btn btn-success w-50 order-btn">ORDER NOW</button>
+            </NavLink>
           <button><i class="fa-solid fa-cart-plus"></i></button>
       </div>
       <div class="card-footer d-flex justify-content-evenly">

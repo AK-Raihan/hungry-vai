@@ -48,7 +48,25 @@ const Navigation = () => {
 
               <span>Hello <span className="fw-bold text-info">{user.displayName}</span> </span>
               <div className=""><img className="rounded-circle user-pic" src={user.photoURL} alt="" /></div>    
-              <button onClick={logout} className="text-success  border-0 btn-lg btn-outline-danger" >Logout</button>
+              <div className="dropdown">
+                                <a className="btn btn-secondary dropdown-toggle" href="/" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Dashboard
+                                </a>
+
+                                <ul className="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <li className="nav-item">
+                                        <NavLink className="nav-link" to="/myOrder">My Order</NavLink>
+                                    </li>
+                                    <li className="nav-item">
+                                        <NavLink className="nav-link" to="/manageOrder">Manage Order</NavLink>
+                                    </li>
+                                    <li className="nav-item">
+                                        <NavLink className="nav-link" to="/addService">Add New Food</NavLink>
+                                    </li>
+                                    <li><hr className="dropdown-divider"/></li>
+                                    <button className="btn btn-info ms-2" onClick={logout}>Logout</button>
+                                </ul>
+                            </div>
 
             </div>
             :

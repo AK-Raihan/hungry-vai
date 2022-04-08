@@ -7,10 +7,11 @@ const Products = () => {
     const[products, setProducts]= useState([]);
 
     useEffect( ()=>{
-        fetch('./product.json')
+        fetch('http://localhost:5000/foods')
         .then(res=>res.json())
         .then(data=>setProducts(data))
     } ,[])
+    console.log(products);
     return (
         <div className='product-main py-5'>
             <div className="container my-5">

@@ -33,8 +33,8 @@ export default class Banner extends Component {
                 backgroundRepeat: 'no-repeat',
                 backgroundPosition: 'center',
                 backgroundSize: 'cover',
-                paddingTop: "250px",
-                paddingBottom: "250px",
+                paddingTop: "310px",
+                paddingBottom: "350px"
                 
                 }}>
                 
@@ -60,8 +60,8 @@ export default class Banner extends Component {
                 backgroundRepeat: 'no-repeat',
                 backgroundPosition: 'center',
                 backgroundSize: 'cover',
-                paddingTop: "250px",
-                paddingBottom: "250px",
+                paddingTop: "310px",
+                paddingBottom: "350px"
                 
                 }}>
                 <div className="row">
@@ -86,8 +86,8 @@ export default class Banner extends Component {
                 backgroundRepeat: 'no-repeat',
                 backgroundPosition: 'center',
                 backgroundSize: 'cover',
-                paddingTop: "250px",
-                paddingBottom: "250px",
+                paddingTop: "310px",
+                paddingBottom: "350px"
                 
                 }}>
                 <div className="row">
