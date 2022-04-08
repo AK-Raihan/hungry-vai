@@ -16,32 +16,32 @@ const Footer = () => {
                     <Col lg={3} md={6} className="text-white">
                         <h3 className="text-center text-md-start"><img style={{height: '55px'}} className='img-fluid' src={logo} alt="" /></h3>
                         <p className="text-light text-center text-md-start">Experience what the biggest and the best of wet and wild iconic Hosting Provider</p>
-                        <p><FontAwesomeIcon className="text-info" icon={faMapMarkerAlt} /> Mirpur, Dhaka-1216</p>
-                        <p><FontAwesomeIcon className="text-info" icon={faEnvelope} /> support@domain.com</p>
-                        <p><FontAwesomeIcon className="text-info" icon={faEnvelope} /> (+880)1962 123345</p>
+                        <p><FontAwesomeIcon className="text-warning" icon={faMapMarkerAlt} /> Mirpur, Dhaka-1216</p>
+                        <p><FontAwesomeIcon className="text-warning" icon={faEnvelope} /> support@domain.com</p>
+                        <p><FontAwesomeIcon className="text-warning" icon={faEnvelope} /> (+880)1962 123345</p>
                     </Col>
                     <Col lg={2} md={6} className="text-white">
                         <h4 className="text-center text-md-start mb-3">Quick Links</h4>
-                        <button className="btn text-white "><FontAwesomeIcon className="text-info" icon={faChevronRight} /> About Us</button><br />
-                        <button className="btn text-white "><FontAwesomeIcon className="text-info" icon={faChevronRight} /> Services</button><br />
-                        <button className="btn text-white "><FontAwesomeIcon className="text-info" icon={faChevronRight} /> Booking</button><br />
-                        <button className="btn text-white "><FontAwesomeIcon className="text-info" icon={faChevronRight} /> Packages</button><br />
-                        <button className="btn text-white "><FontAwesomeIcon className="text-info" icon={faChevronRight} /> Contact</button>
+                        <button className="btn text-white "><FontAwesomeIcon className="text-warning" icon={faChevronRight} /> About Us</button><br />
+                        <button className="btn text-white "><FontAwesomeIcon className="text-warning" icon={faChevronRight} /> Services</button><br />
+                        <button className="btn text-white "><FontAwesomeIcon className="text-warning" icon={faChevronRight} /> Booking</button><br />
+                        <button className="btn text-white "><FontAwesomeIcon className="text-warning" icon={faChevronRight} /> Packages</button><br />
+                        <button className="btn text-white "><FontAwesomeIcon className="text-warning" icon={faChevronRight} /> Contact</button>
                     </Col>
                     <Col lg={3} md={6} className="text-white">
                         <h4 className="text-center text-md-start mb-3">Useful Links</h4>
-                        <button className="btn text-white "><FontAwesomeIcon className="text-info" icon={faChevronRight} /> Privacy Policy</button><br />
-                        <button className="btn text-white "><FontAwesomeIcon className="text-info" icon={faChevronRight} /> Terms and Conditions</button><br />
-                        <button className="btn text-white "><FontAwesomeIcon className="text-info" icon={faChevronRight} /> Disclaimer</button><br />
-                        <button className="btn text-white "><FontAwesomeIcon className="text-info" icon={faChevronRight} /> Support</button><br />
-                        <button className="btn text-white "><FontAwesomeIcon className="text-info" icon={faChevronRight} /> FAQ</button>
+                        <button className="btn text-white "><FontAwesomeIcon className="text-warning" icon={faChevronRight} /> Privacy Policy</button><br />
+                        <button className="btn text-white "><FontAwesomeIcon className="text-warning" icon={faChevronRight} /> Terms and Conditions</button><br />
+                        <button className="btn text-white "><FontAwesomeIcon className="text-warning" icon={faChevronRight} /> Disclaimer</button><br />
+                        <button className="btn text-white "><FontAwesomeIcon className="text-warning" icon={faChevronRight} /> Support</button><br />
+                        <button className="btn text-white "><FontAwesomeIcon className="text-warning" icon={faChevronRight} /> FAQ</button>
                     </Col>
                     <Col lg={4} md={6} className="text-white">
                         <h4 className="text-center text-md-start mb-3">Join our newsletter</h4>
                         <div className="news-form">
                         <form className="d-flex">
                             <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-                            <button className="btn btn-outline-success" type="submit">Search</button>
+                            <button className="btn btn-outline-warning" type="submit">Search</button>
                         </form>
                         </div>
                         <hr />
@@ -56,13 +56,13 @@ const Footer = () => {
                         <hr />
                         <Row>
                             <Col className="p-0">
-                            <p><FontAwesomeIcon className="text-info" icon={faCcMastercard} /> MasterCard</p>
+                            <p><FontAwesomeIcon className="text-warning" icon={faCcMastercard} /> MasterCard</p>
                             </Col>
                             <Col>
-                            <p><FontAwesomeIcon className="text-info" icon={faCcPaypal} /> PayPal</p>
+                            <p><FontAwesomeIcon className="text-warning" icon={faCcPaypal} /> PayPal</p>
                             </Col>
                             <Col>
-                            <p><FontAwesomeIcon className="text-info" icon={faCcVisa} /> Visa</p>
+                            <p><FontAwesomeIcon className="text-warning" icon={faCcVisa} /> Visa</p>
                             </Col>
                         </Row>
                     </Col>

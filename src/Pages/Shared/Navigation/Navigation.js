@@ -12,8 +12,8 @@ const Navigation = () => {
   <div className="logo">
   <a className="navbar-brand" href="/"> <img className='img-fluid' src= {logo} alt="" /> </a>
   </div>
-    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span className="navbar-toggler-icon"></span>
+    <button className="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span className="navbar-toggler-icon text-white"></span>
     </button>
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
@@ -46,7 +46,7 @@ const Navigation = () => {
         user?.email ?
             <div className=" d-flex justify-content-center align-items-center w-100">
 
-              <span>Hello <span className="fw-bold text-info">{user.displayName}</span> </span>
+              <span>Hello <span className="fw-bold text-warning">{user.displayName}</span> </span>
               <div className=""><img className="rounded-circle user-pic" src={user.photoURL} alt="" /></div>    
               <div className="dropdown">
                                 <a className="btn btn-secondary dropdown-toggle" href="/" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">

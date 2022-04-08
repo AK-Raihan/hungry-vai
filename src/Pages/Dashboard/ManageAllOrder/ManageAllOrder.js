@@ -6,6 +6,11 @@ import React, { useState, useEffect } from 'react';
 
 const ManageAllOrder = () => {
     const[orders, setOrders]=useState([])
+    const[status, setStatus]=useState('')
+
+    const handleStatus = (e)=>{
+        setStatus(e.target.value);
+    }
 
 
  
@@ -33,7 +38,7 @@ const ManageAllOrder = () => {
         fetch(`http://localhost:5000/updateStatus/${id}`, {
             method: "PUT",
             headers: {"content-type" : "application/json"},
-            body: JSON.stringify({}),
+            body: JSON.stringify({status}),
         })
 
     }
@@ -65,7 +70,7 @@ const ManageAllOrder = () => {
                                 <th >{order.email}</th>
                                 <th >{order.date}</th>
                                 <th >{order.name}</th>
-                                <th className='text-end' >{order.status} </th>
+                                <input onBlur={handleStatus} type="text" className='border-0 w-25' defaultValue={order.status} /> 
                                 <button onClick={() => handleDelete(order?._id)} className="btn btn-outline-danger text-end">Remove</button>
                 <button onClick={()=> handleUpdate(order?._id)}   className="btn btn-outline-success text-end">Update</button>
                             </tr>

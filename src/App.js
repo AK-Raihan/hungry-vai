@@ -16,6 +16,7 @@ import AuthProvider from './Context/AuthProvider';
 import AddService from './Pages/Dashboard/AddService/AddService';
 import Register from './Pages/Login/Register/Register';
 import About from './Pages/Home/About/About';
+import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
 
 
 function App() {
@@ -38,8 +39,9 @@ function App() {
           </Route>
           <Route path="/register" element={<Register />}>
           </Route>
-          <Route path="/booking/:productId" element={<Booking />}>
-          </Route>
+          <Route path="/booking/:productId" element={<PrivateRoute>
+            <Booking/>
+          </PrivateRoute>} />
           <Route path="/myOrder" element={<MyOrder />}>
           </Route>
           <Route path="/manageOrder" element={<ManageAllOrder />}>
