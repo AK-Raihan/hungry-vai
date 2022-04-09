@@ -13,11 +13,13 @@ const Product = (props) => {
         <p class="card-text">{description}</p>
         <p className='price '>{price}</p>
       </div>
-      <div className="card-body">
+      <div className="card-body ">
             <NavLink to={`/booking/${_id}`}>
-            <button className="btn btn-success w-50 order-btn">ORDER NOW</button>
+            <button className="btn me-2 order-btn">ORDER NOW</button>
             </NavLink>
-          <button><i class="fa-solid fa-cart-plus"></i></button>
+            <NavLink to={`/details/${_id}`}>
+            <button className="btn  order-btn">Details</button>
+            </NavLink>
       </div>
       <div class="card-footer d-flex justify-content-evenly">
         <small class="text-muted">serving time</small>

@@ -13,7 +13,9 @@ const FoodCategory = () => {
   return (
     <div style={{ 
       backgroundImage: `url(${bg})`,
-      backgroundRepeat: 'no-repeat', 
+      backgroundRepeat: 'no-repeat',
+      backgroundAttachment: 'fixed',
+      backgroundSize: 'cover'
     }}>
       <div className='cata-main'>
       <div className="container">

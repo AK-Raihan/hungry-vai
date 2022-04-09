@@ -17,6 +17,8 @@ import AddService from './Pages/Dashboard/AddService/AddService';
 import Register from './Pages/Login/Register/Register';
 import About from './Pages/Home/About/About';
 import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
+import Payment from './Pages/Dashboard/Payment/Payment';
+import Contact from './Pages/Home/Contact/Contact';
 
 
 function App() {
@@ -47,6 +49,10 @@ function App() {
           <Route path="/manageOrder" element={<ManageAllOrder />}>
           </Route>
           <Route path="/addService" element={<AddService />}>
+          </Route>
+          <Route path="/payment" element={<Payment />}>
+          </Route>
+          <Route path="/contact" element={<Contact />}>
           </Route>
         </Routes>
         <Footer/>

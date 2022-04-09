@@ -10,6 +10,7 @@ const About = () => {
             backgroundImage: `url(${bg})`,
             backgroundRepeat: 'no-repeat', 
             backgroundSize: 'cover',
+            backgroundAttachment: 'fixed',
             paddingTop: '120px',
             paddingBottom: '120px'
             

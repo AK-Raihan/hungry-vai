@@ -7,6 +7,9 @@
     border: 0;
     border-radius: 5px;
 }
+.order-btn:hover{
+    background-color: #bd3734;
+}
 .price{
     background-color: #fb524f;
     color: #fff;

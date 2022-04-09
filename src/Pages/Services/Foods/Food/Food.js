@@ -14,10 +14,12 @@ const Food = (props) => {
         <p className='price '>{price}</p>
       </div>
       <div className="card-body">
-            <NavLink to={`/booking/${_id}`}>
-            <button className="btn btn-success w-50 order-btn">ORDER NOW</button>
+      <NavLink to={`/booking/${_id}`}>
+            <button className="btn btn-success me-2 order-btn">ORDER NOW</button>
             </NavLink>
-          <button><i class="fa-solid fa-cart-plus"></i></button>
+            <NavLink to={`/details/${_id}`}>
+            <button className="btn btn-success  order-btn">Details</button>
+            </NavLink>
       </div>
       <div class="card-footer d-flex justify-content-evenly">
         <small class="text-muted">serving time</small>

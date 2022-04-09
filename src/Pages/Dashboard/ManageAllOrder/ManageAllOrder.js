@@ -45,17 +45,17 @@ const ManageAllOrder = () => {
 
     return (
         <div style={{marginBottom:'300px'}}>
-            <h2>Orders: {orders.length}</h2>
+            <h6 className='text-center py-4'>Orders: {orders.length}</h6>
             <div className='container' >
-                <table class="table">
+            <table class="table">
                     <thead>
-                        <tr className="text-start">
+                        <tr className="text-start " >
                             <th>User</th>
                             <th scope="col">Email</th>
                             <th scope="col">Date</th>
                             <th scope="col">Product</th>
-                            <th className='text-end' scope="col">Status</th>
-                            <th className='text-end' scope="col">Action</th>
+                            <th className='text-right' scope="col">Status</th>
+                            <th className='text-right' scope="col">Action</th>
                         </tr>
                     </thead>
 
@@ -70,9 +70,9 @@ const ManageAllOrder = () => {
                                 <th >{order.email}</th>
                                 <th >{order.date}</th>
                                 <th >{order.name}</th>
-                                <input onBlur={handleStatus} type="text" className='border-0 w-25' defaultValue={order.status} /> 
-                                <button onClick={() => handleDelete(order?._id)} className="btn btn-outline-danger text-end">Remove</button>
-                <button onClick={()=> handleUpdate(order?._id)}   className="btn btn-outline-success text-end">Update</button>
+                                <input onBlur={handleStatus} type="text" className='' defaultValue={order.status} /> 
+                                <button onClick={() => handleDelete(order?._id)} className="btn btn-outline-danger">Remove</button>
+                                <button onClick={()=> handleUpdate(order?._id)}  className="btn btn-outline-success ">Update</button>
                             </tr>
                         ))}
                     </tbody>
@@ -83,6 +83,11 @@ const ManageAllOrder = () => {
 };
 
 export default ManageAllOrder;
+
+
+
+
+
 
 
 

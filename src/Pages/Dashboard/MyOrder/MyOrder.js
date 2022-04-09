@@ -34,11 +34,11 @@ const MyOrder = () => {
 
     return (
         <div style={{marginBottom:'300px'}}>
-            <h2>Orders: {orders.length}</h2>
+            <h6 className='text-center py-4'>Orders: {orders.length}</h6>
             <div className='container' >
                 <table class="table">
                     <thead>
-                        <tr className="text-start text-right" >
+                        <tr className="text-start " >
                             <th>User</th>
                             <th scope="col">Email</th>
                             <th scope="col">Date</th>

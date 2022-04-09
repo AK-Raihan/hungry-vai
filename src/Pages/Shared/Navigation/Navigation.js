@@ -34,7 +34,7 @@ const Navigation = () => {
           <NavLink to="/home" className="nav-link fs-6 text-white">Blog</NavLink>
         </li>
         <li className="nav-item">
-          <NavLink to="/home" className="nav-link fs-6 text-white">Contact</NavLink>
+          <NavLink to="/contact" className="nav-link fs-6 text-white">Contact</NavLink>
         </li>
       </ul>
       <div>
@@ -56,6 +56,9 @@ const Navigation = () => {
                                 <ul className="dropdown-menu" aria-labelledby="dropdownMenuLink">
                                     <li className="nav-item">
                                         <NavLink className="nav-link" to="/myOrder">My Order</NavLink>
+                                    </li>
+                                    <li className="nav-item">
+                                        <NavLink className="nav-link" to="/payment">Payment</NavLink>
                                     </li>
                                     <li className="nav-item">
                                         <NavLink className="nav-link" to="/manageOrder">Manage Order</NavLink>
