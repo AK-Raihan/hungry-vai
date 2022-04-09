@@ -1,3 +1,4 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
@@ -5,12 +6,12 @@ import { NavLink } from 'react-router-dom';
 const Food = (props) => {
     const{_id, name, img, description, price}=props.food;
     return (
-        <div class="col text-center">
-    <div class="card h-100 food-card">
-      <img src={img} class="card-img-top" alt="..."/>
-      <div class="card-body">
-        <h5 class="card-title fs-4 fw-bold">{name}</h5>
-        <p class="card-text">{description}</p>
+        <div className="col text-center">
+    <div className="card h-100 food-card">
+      <img src={img} className="card-img-top" alt="..."/>
+      <div className="card-body">
+        <h5 className="card-title fs-4 fw-bold">{name}</h5>
+        <p className="card-text">{description}</p>
         <p className='price '>{price}</p>
       </div>
       <div className="card-body">
@@ -21,9 +22,9 @@ const Food = (props) => {
             <button className="btn btn-success  order-btn">Details</button>
             </NavLink>
       </div>
-      <div class="card-footer d-flex justify-content-evenly">
-        <small class="text-muted">serving time</small>
-        <small class="text-muted">home</small>
+      <div className="card-footer d-flex justify-content-evenly">
+      <p className="text-muted"> <FontAwesomeIcon icon="fa-regular fa-clock" />About 30 min</p>
+        <p className="text-muted">Home Delevary</p>
       </div>
     </div>
   </div>

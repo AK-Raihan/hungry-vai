@@ -19,7 +19,7 @@ const Products = () => {
             <h5 className=""> Our Services </h5>
             <h1> What We’re Offering</h1>
             </div>
-            <div className="row row-cols-1 row-cols-md-3 g-4 mt-3">
+            <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mt-3">
                 {
                     products.map(product=><Product
                         key={product._id}

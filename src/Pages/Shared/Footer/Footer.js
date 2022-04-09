@@ -9,7 +9,7 @@ import './Footer.css'
 
 const Footer = () => {
     return (
-        <div style={{ backgroundColor: '#01173C' }}>
+        <div style={{ backgroundColor: '#000000' }}>
             <ScrollToTop smooth top="1000" />
             <Container className="pt-5 pb-2 text-start">
                 <Row>

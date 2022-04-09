@@ -47,7 +47,7 @@ const ManageAllOrder = () => {
         <div style={{marginBottom:'300px'}}>
             <h6 className='text-center py-4'>Orders: {orders.length}</h6>
             <div className='container' >
-            <table class="table">
+            <table className="table">
                     <thead>
                         <tr className="text-start " >
                             <th>User</th>

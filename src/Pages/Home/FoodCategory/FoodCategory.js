@@ -1,6 +1,6 @@
 import React from 'react';
 import './FoodCategory.css'
-import bg from '../../../images/category-bg.jpg'
+import bg from '../../../images/catagory.jpg'
 import cata1 from '../../../images/cata (1).png'
 import cata2 from '../../../images/cata (2).png'
 import cata3 from '../../../images/cata (3).png'
