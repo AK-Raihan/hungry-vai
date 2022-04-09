@@ -17,7 +17,7 @@ const Booking = () => {
     
   
     useEffect(() => {
-      fetch(`http://localhost:5000/singleProduct/${productId}`)
+      fetch(`https://mighty-cove-82642.herokuapp.com/singleProduct/${productId}`)
         .then((res) => res.json())
         .then((result) =>{ 
           setProduct(result)
@@ -38,7 +38,7 @@ const Booking = () => {
       console.log(data);
     data.status = "pending";
     
-        fetch("http://localhost:5000/confirmOrder", {
+        fetch("https://mighty-cove-82642.herokuapp.com/confirmOrder", {
           method: "POST",
           headers: { "content-type": "application/json" },
           body: JSON.stringify(data),

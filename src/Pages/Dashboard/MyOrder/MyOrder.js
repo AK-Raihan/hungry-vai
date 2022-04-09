@@ -12,7 +12,7 @@ const MyOrder = () => {
     console.log(email);
 
     useEffect(()=>{
-        fetch(`http://localhost:5000/myOrder/${email}`)
+        fetch(`https://mighty-cove-82642.herokuapp.com/myOrder/${email}`)
         .then(res=>res.json())
         .then(data=>setOrders(data));
     },[]);
@@ -20,7 +20,7 @@ const MyOrder = () => {
     console.log(orders);
 
     const handleDelete = (id) => {
-        fetch(`http://localhost:5000/delteOrder/${id}`, {
+        fetch(`https://mighty-cove-82642.herokuapp.com/delteOrder/${id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())

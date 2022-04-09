@@ -16,13 +16,13 @@ const ManageAllOrder = () => {
  
 
     useEffect(()=>{
-        fetch(`http://localhost:5000/myOrder`)
+        fetch(`https://mighty-cove-82642.herokuapp.com/myOrder`)
         .then(res=>res.json())
         .then(data=>setOrders(data));
     },[]);
 
     const handleDelete = (id) => {
-        fetch(`http://localhost:5000/delteOrder/${id}`, {
+        fetch(`https://mighty-cove-82642.herokuapp.com/delteOrder/${id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())
@@ -35,7 +35,7 @@ const ManageAllOrder = () => {
       };
 
       const handleUpdate= (id)=>{
-        fetch(`http://localhost:5000/updateStatus/${id}`, {
+        fetch(`https://mighty-cove-82642.herokuapp.com/updateStatus/${id}`, {
             method: "PUT",
             headers: {"content-type" : "application/json"},
             body: JSON.stringify({status}),
